@@ -24,13 +24,64 @@
   background-position-y: center;
 }
 
-.page-1 .non-nav {
-  padding: 20vh 5vw;
+.page-3 {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/artistic-blurry-colorful-wallpaper-background.jpg);
+  background-size: cover;
+  background-position-y: center;
 }
 
-.special-text {
-  font-size: 12vh;
+.page-4 {
+  height: 100vh;
+  overflow: hidden;
+  background-color:#000821;
+}
+
+.page-1 .non-nav {
+  padding: 8vh 5vw;
+}
+
+.page-1 .special-text {
+  font-size: 7vw;
   line-height: 1;
+
+  
+  background: linear-gradient(to right, #2167f3, #ffffff, #2167f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media (max-width: 1024px) {
+  .page-1 .special-text {
+    font-size: 10vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-1 .non-nav {
+    padding: 3vh 5vw;
+  }  
+}
+
+@media (max-width: 500px) {
+  .page-1 .special-text {
+    font-size: 15vw;
+  }
+}
+
+.page-2 .special-text {
+  font-size: 17vw;
+  line-height: 1;
+  transform: translate(0, -70px);
+
+  background: linear-gradient(to right, #2167f3, #ffffff, #2167f3);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.page-3 .special-text-1 {
+  font-size: 2vw;
 }
 
 .scroll-btn {
@@ -48,6 +99,69 @@
   position: absolute;
   /* transform: translateY(200px); */
   text-decoration: none;
+}
+
+.resume-btn {
+  border: white solid 2px;
+  font-size: 2vh;
+  padding: 10vh;
+  /* background-color: #003bbf; */
+  color: white;
+  
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* transform: translateY(200px); */
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  transition: 200ms;
+  color: #2167f3;
+}
+
+.resume-btn-arrow {
+  border: white solid 2px;
+  background-color: #00125a;
+  font-size: 2vh;
+  padding: 2vh;
+  /* background-color: #003bbf; */
+  
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(50px, 70px);
+  text-decoration: none;
+}
+
+.all-notes-btn {
+  border: white solid 2px;
+  font-size: 2vh;
+  padding: 9vh;
+  /* background-color: #003bbf; */
+  color: white;
+  
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute; */
+  text-decoration: none;
+}
+
+.all-notes-btn:hover {
+  transition: 200ms;
+  color: #2167f3;
 }
 
 nav ul {
@@ -76,7 +190,99 @@ nav ul li a {
 .horizontal-line {
   display: flex;
   width: 100%;
-  height: 5px;
+  height: 2px;
   background-color: white; /* Line color */
   position: absolute;
+}
+
+.card-course {
+  height: 50vh;
+  
+  background: rgba(255, 255, 255, 0.271);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.056);
+  transition: 400ms;
+}
+
+.card-course:hover {
+  transition: 400ms;
+  transform: scale(1.02);
+}
+
+.card-course .title {
+  /* font-size: 2vw; */
+  line-height: 1;
+  text-align: start;
+}
+
+.card-course a {
+  text-decoration: none;
+  color: white;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: normal;
+}
+
+.card-course a:hover {
+  color: #00125a;
+  transition: 400ms;
+}
+
+.page-4 .main {
+  border: white solid 2px;
+  border-radius: 80px;
+  height: 80vh;
+  background-image: url(../img/artistic-blurry-colorful-wallpaper-background.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.page-4 .special-text {
+  font-size: 12vh;
+  line-height: 1;
+
+  
+  background: linear-gradient(to right, #ffffff, #2167f3, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.page-4 .bubbles {
+  border: white solid 2px;
+  font-size: 1.5vh;
+  padding: 8vh;
+  /* background-color: #003bbf; */
+  color: white;
+  
+  width: 12vh;
+  height: 12vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-decoration: none;
+  /* transform: translate(-10vw, 20px) rotate(-20deg); */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: normal;  
+}
+
+footer a:hover {
+  color: red;
+}
+footer {
+  /* height: 5vh; */
+  background-color: #000000;
+  color: white;
+  font-size:xx-small;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: normal;  
 }
