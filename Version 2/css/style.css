@@ -13,6 +13,7 @@
   overflow: hidden;
   background-image: url(../img/artistic-blurry-colorful-wallpaper-background.jpg);
   background-size: cover;
+  background-position-x: center;
   background-position-y: bottom;
 }
 
@@ -21,6 +22,7 @@
   overflow: hidden;
   background-image: url(../img/artistic-blurry-colorful-wallpaper-background-2.jpg);
   background-size: cover;
+  background-position-x: center;
   background-position-y: center;
 }
 
@@ -29,6 +31,7 @@
   overflow: hidden;
   background-image: url(../img/artistic-blurry-colorful-wallpaper-background.jpg);
   background-size: cover;
+  background-position-x: center;
   background-position-y: center;
 }
 
@@ -36,6 +39,7 @@
   height: 100vh;
   overflow: hidden;
   background-color:#000821;
+  background-position-x: center;
 }
 
 .page-1 .non-nav {
@@ -43,9 +47,8 @@
 }
 
 .page-1 .special-text {
-  font-size: 7vw;
+  font-size: 12vh;
   line-height: 1;
-
   
   background: linear-gradient(to right, #2167f3, #ffffff, #2167f3);
   -webkit-text-fill-color: transparent;
@@ -54,7 +57,7 @@
 
 @media (max-width: 1024px) {
   .page-1 .special-text {
-    font-size: 10vw;
+    font-size: 7vh;
   }
 }
 
@@ -66,7 +69,7 @@
 
 @media (max-width: 500px) {
   .page-1 .special-text {
-    font-size: 15vw;
+    font-size: 4.5vh;
   }
 }
 
@@ -80,8 +83,66 @@
   -webkit-background-clip: text;
 }
 
+
+@media (max-width: 1900px) {
+  .page-2 .main {
+    padding-top: 5vh;
+  }
+  .page-2 .special-text {
+    padding-top: 5vh;
+  }
+}
+
+@media (max-width: 1400px) {
+  .page-2 .main {
+    padding-top: 25vh;
+  }
+  .page-2 .special-text {
+    padding-top: 15vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-2 .main {
+    padding-top: 10vh;
+  }
+  .page-2 img {
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .page-2 .main {
+    padding-top: 10vh;
+  }
+  .page-2 img {
+    max-width: 100%;
+  }
+  .page-2 .special-text {
+    padding-top: 25vh;
+  }
+}
+
 .page-3 .special-text-1 {
-  font-size: 2vw;
+  font-size: 3vh;
+}
+
+@media (max-width: 450px) {
+  .page-2 .resume-btn {
+    font-size: 1.5vh;
+    padding: 5vh;
+  }
+}
+
+.page-3 .special-text-1 {
+  font-size: 2vh;
+}
+
+@media (max-width: 991px) {
+  .page-3 {
+    height: 100%;
+    /* overflow: auto; */
+  }
 }
 
 .scroll-btn {
@@ -97,8 +158,15 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  /* transform: translateY(200px); */
+  /* transform: translateY(10%); */
   text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .scroll-btn {
+    padding: 7vh;
+    transform: translateY(120%);
+  }
 }
 
 .resume-btn {
@@ -286,3 +354,4 @@ footer {
   font-family: "Silkscreen", sans-serif;
   font-weight: normal;  
 }
+
