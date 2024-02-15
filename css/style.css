@@ -306,6 +306,7 @@ nav ul li a {
   background-size: cover;
   background-position-x: center;
   background-position-y: top;
+  overflow: hidden;
 }
 
 .page-4 .special-text {
@@ -317,6 +318,13 @@ nav ul li a {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
+@media (max-width: 991px) {
+  .page-4 .special-text {
+    font-size: 6vh;
+  }
+}
+
 
 .page-4 .bubbles {
   border: white solid 2px;
@@ -334,6 +342,12 @@ nav ul li a {
   position: absolute;
   text-decoration: none;
   /* transform: translate(-10vw, 20px) rotate(-20deg); */
+}
+
+@media (max-width: 500px) {
+  .page-4 .text-cool {
+    font-size: 1vh;
+  }
 }
 
 footer a {
